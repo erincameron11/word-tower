@@ -18,6 +18,7 @@ public class WordTowerGame extends Application {
 			primaryStage.setTitle("Word Tower");
 			
 			// Create a board
+			Board board = new Board();
 			
 			// Create a block
 			
