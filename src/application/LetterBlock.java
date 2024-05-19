@@ -1,16 +1,31 @@
 package application;
 
+import java.util.Random;
+
 public class LetterBlock {
+	// Define class-wide variables
+	public char randomLetter;
+	public int height;
+	public int width;
+	
 	// Default no-arg constructor
 	public LetterBlock() {
-		char randomLetter = createRandomLetter();
-		int height = 50;
-		int width = 50;
+		setLetter(); // Set the letter of the block
+		height = 50;
+		width = 50;
 	}
 	
-	public char createRandomLetter() {
-		return 'z';
+	// Getter for letter
+	public char getLetter() {
+		return this.randomLetter;
 	}
 	
+	
+	// Setter for letter
+	// TODO: add functionality to generate more common/lower point letters more often
+	public void setLetter() {
+		Random random = new Random();
+		randomLetter = (char)(random.nextInt(26) + 'a');
+	}
 	
 }

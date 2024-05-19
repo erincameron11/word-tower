@@ -21,6 +21,10 @@ public class WordTowerGame extends Application {
 			Board board = new Board();
 			
 			// Create a block
+			LetterBlock block = new LetterBlock();
+			System.out.print(block.getLetter());
+			
+			// 
 			
 		} catch(Exception e) {
 			e.printStackTrace();
